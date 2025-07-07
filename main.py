@@ -30,6 +30,11 @@ def evaluate_error(fx2h, fxh, fx, h):
 
 x = bottom_limit
 
+print()
+print(f"f(x)\t= {preprocess(expression)}")
+print(f"x\t= [{bottom_limit}, {upper_limit}]")
+print(f"h\t= {step}")
+
 while x <= upper_limit:
     fx = evaluate_expression(expression, x)
     fxh = evaluate_expression(expression, x + step)
